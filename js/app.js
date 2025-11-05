@@ -5559,7 +5559,7 @@ function escapeHtml(text) {
 
 function showPreview(item) {
   const preview = document.getElementById('preview');
-  const sponsorSection = item.sponsored ? '' : '<a href="https://widget.livepix.gg/embed/eda0a416-e3d1-4f38-9b0b-ea5a7aface4a" class="sponsor-link">Patrocinar</a>';
+  const sponsorSection = item.sponsored ? '' : '<a href="https://livepix.gg/tucoreage" class="sponsor-link">Patrocinar</a>';
   preview.innerHTML = `
     <button class="close-btn">✕</button>
     <h2>${escapeHtml(item.title)}</h2>
@@ -5660,6 +5660,7 @@ function renderPagination() {
     if (e.key === 'Enter') goBtn.click();
   });
 }
+
 
 
 renderGrid(currentPage);
